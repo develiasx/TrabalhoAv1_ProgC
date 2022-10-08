@@ -65,3 +65,34 @@ int fpedido(){
 			return fpedido();
 			break;
 		}
+	         case 2:{
+			int deg;
+			printf("---------- CARDAPIO ----------\n");
+			printf("| 1 - Enrolado de Presunto  |\n");
+			printf("-----------------------------\n");
+			printf("| 2 - Coxinha de Camarão    |\n");
+			printf("-----------------------------\n");
+			printf("| 3 - Baurú                 |\n");
+			printf("-----------------------------\n");
+			printf("| 4 - Bomba de calabresa    |\n");
+			printf("-----------------------------\n");
+			printf("Escolha uma Refeição: ");
+			scanf("%d", &deg);
+			printf("Digite a quantidade: ");
+			scanf("%d", &produto.quantidade);
+			if(deg == 1){
+				strcpy(produto.nome, "Enrolado de Presunto");
+			}else if(deg == 2){
+				strcpy(produto.nome, "Coxinha de Camarão");
+			}else if(deg == 3){
+				strcpy(produto.nome, "Baurú");
+			}else if(deg == 4){
+				strcpy(produto.nome, "Bomba de calabresa");
+			}else{
+				printf("Escolha uma opção válida!");
+				return fpedido();
+			}
+			printf("\nVocê Escolheu o item: %s/quantidade: %d\n", produto.nome, produto.quantidade);
+			return fpedido();
+			break;
+		}
