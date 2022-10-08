@@ -151,3 +151,18 @@ int alterpedido(){
 	printf("Alterar pedido");
 
 }
+//Função Consultar pedido
+int consulpedido(){
+	int retorno;
+	printf("Seus pedidos: \n");
+	printf("%d %s \n",produto.quantidade, produto.nome);
+	printf("Pressione 0 para voltar!\n");
+	scanf("%d", &retorno);
+	if(retorno != 0){
+		system("cls");
+		printf("Informe uma opção válida!\n");
+		consulpedido();
+	}else{
+		fpedido();
+	}
+}
