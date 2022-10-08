@@ -136,5 +136,4 @@ int fpedido(){
 			printf("\nVocê adicionou o item: %s com a quantidade de %d\n", produto.nome, produto.qtd);
 			return fpedido();
 			break;
-	
-		}
+   }
