@@ -96,3 +96,45 @@ int fpedido(){
 			return fpedido();
 			break;
 		}
+		 case 3:{
+			int optionDrink;
+			printf("---------- CARDAPIO ----------\n");
+			printf("| 1 - Guaraná Jesus      |\n");
+			printf("-----------------------------\n");
+			printf("| 2 - Suco de Tamarindo  |\n");
+			printf("-----------------------------\n");
+			printf("| 3 - Guaraná da Amazônia|\n");
+			printf("-----------------------------\n");
+			printf("| 4 - Água Saborizada    |\n");
+			printf("-----------------------------\n");
+			printf("| 5 - Voltar             |\n");
+			printf("-----------------------------\n");
+			printf("Escolha uma opção válida: ");
+			scanf("%d", &optionDrink);
+			system("cls");
+			printf("Informe a quantidade: ");
+			scanf("%d", &produto.qtd);
+			if(optionDrink == 1){
+				strcpy(produto.nome, "Guaraná Jesus");
+			}
+			else if(optionDrink == 2){
+				strcpy(produto.nome, "Suco de Tamarindo");
+			}
+			else if(optionDrink == 3){
+				strcpy(produto.nome, "Guaraná da Amazônia");
+			}
+			else if(optionDrink == 4){
+				strcpy(produto.nome, "Água Saboriza");
+			}
+			else if(optionDrink == 5){
+				return fpedido();
+			}else{
+				printf("Escolha uma opção válida!");
+				return fpedido();
+			}
+
+			printf("\nVocê adicionou o item: %s com a quantidade de %d\n", produto.nome, produto.qtd);
+			return fpedido();
+			break;
+	
+		}
