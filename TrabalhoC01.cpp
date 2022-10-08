@@ -137,3 +137,17 @@ int fpedido(){
 			return fpedido();
 			break;
    }
+		case 4: {
+			telaPrincipal();
+			break;
+		}	
+	}
+	
+	return 0;
+}
+
+//Função de criação de alteração do pedido
+int alterpedido(){
+	printf("Alterar pedido");
+
+}
