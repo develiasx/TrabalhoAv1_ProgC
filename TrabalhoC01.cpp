@@ -166,3 +166,35 @@ int consulpedido(){
 		fpedido();
 	}
 }
+int telaPrincipal(){
+	int choice;
+	printf("-----------------------------------------------\n");
+	printf("| 1 - Fazer Pedido     | 2 - Alterar Pedido |\n");
+	printf("| 3 - Consultar Pedido | 4 - Sair           |\n");
+	printf("------------------------------------------\n");
+	printf("Escolha uma opção: ");
+	scanf("%d", &choice);
+	switch(choice){
+		case 1: {
+			system("cls");
+			fpedido();
+			break;
+		}
+		case 2: {
+			system("cls");
+			alterpedido();
+			break;
+		}
+		case 3: {
+			system("cls");
+			consulpedido();
+			break;
+		}
+		case 4: {
+			system("cls");
+			printf("Saindo da aplicação...");
+			return 0;
+			break;
+		}
+	}
+}
