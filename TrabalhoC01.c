@@ -46,7 +46,7 @@ int alterarpedido();
 int consultarpedido();
 int telaPrincipal();
 
-//Tela Principal Restaurante
+//Tela Principal Lanchonete
 int telaPrincipal(){
 	int choice;
 	printf("\n\n------------------ 70LANCHES --------------\n");
