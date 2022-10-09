@@ -136,7 +136,7 @@ int rpedido(){
 	int i = 0;
 	printf("------------ CARDAPIO 70LANCHES --------------\n");
 	printf("| 1 - Sanduiches| 2 - Sobremesas  |\n");
-	printf("| 3 - Bebidas   | 4 - Voltar       |\n");
+	printf("| 3 - Bebidas   | 4 - Voltar      |\n");
 	printf("------------------------------------\n\n");
 	printf("Escolha a opcoes que voce deseja fazer o pedido: ");
 	scanf("%d", &option);
